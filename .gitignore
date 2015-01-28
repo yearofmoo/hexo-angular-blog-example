@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+db.json
+debug.log
+node_modules/
+public/
+.deploy/
+npm-debug.log
+/assets
+/layout
+/themes/casper/bower_components

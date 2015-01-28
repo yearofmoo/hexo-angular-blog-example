@@ -1,0 +1,6 @@
+<div ng-repeat="result in searchResultsCtrl.results">
+  <h2>
+    <a ng-href="{{ result.href }}" ng-bind-html="result.title | unsafeHtml"></a>
+  </h2>
+  <p>{{ result.description }}</p>
+</div>

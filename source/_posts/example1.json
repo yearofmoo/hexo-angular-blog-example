@@ -1,0 +1,12 @@
+{
+  "language":"web",
+
+  "files": [
+    { "file"  : "some-file.html", "type" : "html" },
+    { "title" : "CSS Code", "file" : "some-file.css" }
+  ],
+
+  "unitTests": [
+    "spec.js"
+  ]
+}

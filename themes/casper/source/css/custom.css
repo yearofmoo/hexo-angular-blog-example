@@ -1,0 +1,43 @@
+body, html, input, textarea { font-family:verdana; }
+
+pre, code { border:0!important; padding:0; }
+
+.search-form {
+  position:absolute;
+  top:50px;
+  right:50px;
+  z-index:100;
+  font-family: verdana;
+}
+
+.search-form input {
+  background:rgba(255,255,255,0.5);
+  border:0;
+  padding:8px;
+  color:white;
+  outline:0;
+  border-radius:10px;
+}
+
+body:not(.home-template) .search-form input {
+  background:#3767A8;
+}
+
+.newsletter-panel {
+  text-align:center;
+  background:#eee;
+  padding:20px;
+}
+
+.newsletter-panel input,
+.newsletter-panel button {
+  padding:5px;
+  margin:10px;
+}
+
+.site-footer { margin-top:0; }
+
+.search-results {
+  margin:0px auto;
+  width:80%;
+}

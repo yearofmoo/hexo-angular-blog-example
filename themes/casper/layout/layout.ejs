@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html ng-app="HexoApp">
+<%- partial('casper/head') %>
+<body>
+<% if (typeof page.title == 'undefined') { %>
+<main class="home-template" plainview="on">
+<% } else { %>
+<main class="post-template" plainview="on">
+<% } %>
+  <%- partial('casper/header') %>
+  <%- body %>
+  <%- partial('casper/footer') %>
+</main>
+  <%- partial('casper/after_all') %>
+</body>
+</html>

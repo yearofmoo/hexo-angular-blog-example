@@ -1,0 +1,101 @@
+body.no-js .hexo-editor .hexo-editor-slide + .hexo-editor-slide {
+  display:none;
+}
+
+pre:not(.hexo-editor-slide) {
+  display:block;
+  margin:80px -10%;
+  clear:both;
+  position:relative;
+}
+
+pre:not(.hexo-editor-slide) > code {
+  padding:12.8000001907349px;
+}
+
+.hexo-editor {
+  background:#3E3E3E;
+  color:white;
+  margin:80px -10%;
+  clear:both;
+  position:relative;
+}
+
+.hexo-editor-nav > .actions {
+  position:absolute;
+  top:10px;
+  right:10px;
+}
+
+pre:not(.hexo-editor-slide) > code,
+.hexo-editor-code {
+  display:block;
+  color:white;
+  background:#23241f;
+  position:relative;
+  overflow-y:scroll;
+  overflow-x:auto;
+}
+
+.hexo-editor-code {
+  max-height:400px;
+  min-height:250px;
+}
+
+.hexo-editor-nav-item {
+  padding:8px 15px;
+  color:white!important;
+  display:inline-block;
+}
+
+.hexo-editor-nav-item:not(.active):hover {
+  color:#bbb!important;
+}
+
+.hexo-editor-nav-item.active {
+  position:relative;
+  background:#732171;
+  color:white;
+}
+
+.hexo-editor-nav-item.active:after {
+  position:absolute;
+  content:"";
+  left:50%;
+  margin-left:-10px;
+  border:10px solid transparent;
+  border-top-color:#732171;
+  bottom:-20px;
+  z-index:10;
+}
+
+.hexo-editor-slide {
+  margin:0;
+}
+
+.hexo-editor-slide code {
+  display:block;
+}
+
+@media only screen and (max-width: 62em) {
+  .hexo-editor {
+    margin-left:0;
+    margin-right:0;
+  }
+}
+
+@media only screen and (max-width: 48em) {
+  .hexo-editor-nav > .actions {
+    top:auto;
+    height:40px;
+    bottom:-40px;
+    padding:5px 10px;
+    text-align:right;
+    right:0;
+    left:0;
+    background:#23241f;
+  }
+  .hexo-editor-nav-item {
+    display:block;
+  }
+}

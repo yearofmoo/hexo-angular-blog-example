@@ -1,0 +1,15 @@
+<div class="hexo-editor-nav">
+  <a ng-repeat="file in editor.files"
+     class="hexo-editor-nav-item"
+     ng-class="{active:editor.current == $index}"
+     href=""
+     ng-click="editor.setCurrent($index)">
+    {{ file }}
+  </a>
+
+  <div class="actions">
+    <span class="fa fa-download"></span>
+    <span class="fa fa-user"></span>
+  </div>
+</div>
+<div class="hexo-editor-code" ng-transclude></div>

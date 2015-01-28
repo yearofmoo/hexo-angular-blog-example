@@ -1,0 +1,22 @@
+{
+  "name": "hexo-site",
+  "version": "2.8.3",
+  "private": true,
+  "scripts": {
+    "preinstall": "npm ln ./lib/hexo-plugins; npm ln ./lib/hexo-generator-lunr"
+  },
+  "dependencies": {
+    "ejs": "^2.2.3",
+    "glob": "^4.3.5",
+    "hexo-generator-lunr": "*",
+    "hexo-plugins": "*",
+    "hexo-renderer-ejs": "*",
+    "hexo-renderer-marked": "*",
+    "hexo-renderer-stylus": "*",
+    "underscore": "^1.7.0",
+    "utils-merge": "^1.0.0"
+  },
+  "devDependencies": {
+    "bower": "^1.3.12"
+  }
+}

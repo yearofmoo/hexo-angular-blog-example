@@ -1,0 +1,50 @@
+<section class="ng-cloak newsletter-panel">
+  <header>
+    <h3>Get Free Blog Post Updates</h3>
+    <p class="slogan">You know you want to sign up</p>
+  </header>
+
+  <div data-ng-controller="NewsletterFormController as ctrl">
+    <form name="newsletterForm"
+          class="newsletter-form row fade-block"
+          data-ng-if="!ctrl.submitted"
+          data-ng-submit="ctrl.submit(newsletterForm.$valid, data)">
+
+      <input type="text"
+             name="firstName"
+             data-ng-model="data.name"
+             placeholder="First + Last Name"
+             ng-disabled="ctrl.loading"
+             class="field col-xs-12 col-sm-4 col-md-4"
+             required />
+
+      <input type="email"
+             name="email"
+             data-ng-model="data.email"
+             placeholder="Email Address"
+             ng-disabled="ctrl.loading"
+             class="field col-xs-12 col-sm-4 col-md-4"
+             required />
+
+      <button class="submit-button button col-xs-12 col-sm-3"
+              ng-disabled="ctrl.loading">
+        Submit <span class="handle fa fa-arrow-circle-right"></span>
+      </button>
+    </form>
+
+    <p class="loading dark fade-block" data-ng-if="ctrl.loading">
+      Please Wait...
+    </p>
+
+    <div class="success fade-block" data-ng-if="ctrl.submitted && ctrl.success">
+      <h3>Almost There!</h3>
+      <p>
+        To complete the subscription. Please visit your email inbox and click on the confirmation link.
+      </p>
+    </div>
+
+    <p class="failure fade-block" data-ng-if="ctrl.failure">
+      {{ ctrl.message }}
+    </p>
+  </div>
+</section>
